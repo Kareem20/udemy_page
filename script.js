@@ -56,7 +56,8 @@ function contain(title, search) {
     while (cards.firstChild) {
       cards.removeChild(cards.firstChild);
     }
-    fetch("http://localhost:3001/courses")
+    //fetch("http://localhost:3001/courses")
+      fetch("https://raw.githubusercontent.com/Kareem20/udemy_page/frontend_Phase_2/data.json")
       .then((response) => response.json())
       .then((data) => {
         for (const it in data) {
