@@ -10,68 +10,54 @@ function renderCourse(curCourse, parent, subString) {
     return;
   }
   let course = document.createElement("div");
-  course.setAttribute("class", "card");
-
-  let courseImage = document.createElement("img");
-  courseImage.src = curCourse.image;
-  course.appendChild(courseImage);
-
-  let title = document.createElement("h1");
-  title.textContent = curCourse.title;
-  course.appendChild(title);
-
-  let p1 = document.createElement("p");
-  p1.textContent = curCourse.author;
-  course.appendChild(p1);
-
-  let sp1 = document.createElement("span");
-  sp1.setAttribute("class", "fa fa-star checked");
-  course.appendChild(sp1);
-
-  let sp2 = document.createElement("span");
-  sp2.setAttribute("class", "fa fa-star checked");
-  course.appendChild(sp2);
-
-  let sp3 = document.createElement("span");
-  sp3.setAttribute("class", "fa fa-star checked");
-  course.appendChild(sp3);
-
-  let sp4 = document.createElement("span");
-  sp4.setAttribute("class", "fa fa-star");
-  course.appendChild(sp4);
-
-  let sp5 = document.createElement("span");
-  sp5.setAttribute("class", "fa fa fa-star");
-  course.appendChild(sp5);
-
-  let p2 = document.createElement("p");
-  p2.textContent = curCourse.price;
-  course.appendChild(p2);
-
-  parent.appendChild(course);
+  course.innerHTML = ` <div class="card">
+                          <img src="${curCourse.image}" />
+                          <div class="insideCard">
+                            <h1>${curCourse.title}</h1>
+                            <p1>${curCourse.author}</p1>
+                            <div class="stars">
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>   
+                            </div>
+                            <p2>${curCourse.price}</p2>
+                          </div>
+                        </div>`;
+  if (parent !== null) parent.appendChild(course);
 }
 
 function search() {
+  //TODO:search on specific tab.
   let data = document.getElementById("search-bar-id").value;
   getCourse("cards", data);
 }
 
-function getCourse(child, subString) {
+function getCourse(child, subString, coursesSelector) {
+  const arr = [
+    "Python",
+    "Excel",
+    "WebDevelopment",
+    "JavaScript",
+    "DataScience",
+    "AWSCertification",
+    "Drawing",
+  ];
   let cards = document.getElementById(child);
-  while (cards.firstChild) {
+  while (cards !== null && cards.firstChild !== null) {
     cards.removeChild(cards.firstChild);
   }
   //fetch("https://raw.githubusercontent.com/Kareem20/udemy_page/frontend_Phase_2/data.json")
-  fetch("http://localhost:3000/courses")
+  fetch("http://localhost:3000/tab")
     .then((response) => response.json())
     .then((data) => {
-      for (const it in data) {
-        // console.log(data[it].title);
-        renderCourse(data[it], cards, subString);
-      }
+      let courses = data[coursesSelector][arr[coursesSelector]];
+      //console.log(courses);
+      courses.forEach((element) => {
+        renderCourse(element, cards, subString);
+      });
     });
 }
 
-
 //fetch data when page is loaded.
-getCourse("cards", "");
+getCourse("cards", "", 0);

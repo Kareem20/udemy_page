@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Udemy</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/coursesTab.css" />
+    <link rel="stylesheet" href="style/navBar.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/courseSection.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -82,15 +86,85 @@
             published every month
           </p>
         </div>
-        <ul class="courses-topics">
-          <li style="color: black">Python</li>
-          <li>Excel</li>
-          <li>Web Development</li>
-          <li>JavaScript</li>
-          <li>Data Science</li>
-          <li>AWS Certification</li>
-          <li>Drawing</li>
-        </ul>
+        <div class="tab" id="nav-tab" role="tablist">
+          <button
+            onclick="getCourse('cards','',0)"
+            class="nav-link active"
+            id="Python-tab"
+            data-bs-toggle="tab"
+            type="button"
+            aria-controls="Python"
+            aria-selected="true"
+          >
+            Python
+          </button>
+          <button
+            onclick="getCourse('cards','',1)"
+            class="nav-link"
+            id="Excel-tab"
+            data-bs-toggle="tab"
+            type="button"
+            aria-controls="Excel"
+            aria-selected="true"
+          >
+            Excel
+          </button>
+          <button
+            onclick="getCourse('cards','',2)"
+            class="nav-link"
+            id="WebDevelopment-tab"
+            data-bs-toggle="tab"
+            type="button"
+            aria-controls="WebDevelopment"
+            aria-selected="true"
+          >
+            Web Development
+          </button>
+          <button
+            onclick="getCourse('cards','',3)"
+            class="nav-link"
+            id="JavaScript-tab"
+            data-bs-toggle="tab"
+            type="button"
+            aria-controls="JavaScript"
+            aria-selected="true"
+          >
+            JavaScript
+          </button>
+          <button
+            onclick="getCourse('cards','',4)"
+            class="nav-link"
+            id="DataScience-tab"
+            data-bs-toggle="tab"
+            type="button"
+            aria-controls="DataScience"
+            aria-selected="true"
+          >
+            Data Science
+          </button>
+          <button
+            onclick="getCourse('cards','',5)"
+            class="nav-link"
+            id="AWSCertification-tab"
+            data-bs-toggle="tab"
+            type="button"
+            aria-controls="AWSCertification"
+            aria-selected="true"
+          >
+            AWS Certification
+          </button>
+          <button
+            onclick="getCourse('cards','',6)"
+            class="nav-link"
+            id="Drawing-tab"
+            data-bs-toggle="tab"
+            type="button"
+            aria-controls="Drawing"
+            aria-selected="true"
+          >
+            Drawing
+          </button>
+        </div>
         <div class="course-section">
           <h1>Expand your career opportunities with Python</h1>
           <p>

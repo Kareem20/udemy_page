@@ -1,0 +1,90 @@
+.nav {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  align-items: center;
+  box-shadow: 0 8px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.nav-option {
+  margin: 8px;
+  white-space: nowrap;
+}
+
+.nav-list {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.search-bar {
+  border-radius: 20px;
+  width: 80%;
+  height: 40px;
+  margin: 2%;
+  border-width: 1px;
+  padding: 12px;
+  background-color: rgb(233, 238, 240);
+}
+
+.submit-button {
+  margin: 12px;
+  padding: 10px 24px;
+  border-width: 1px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.login-button {
+  margin: 12px;
+  padding: 10px 24px;
+  border-width: 1px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+a {
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+a:link {
+  text-decoration: none !important;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(120, 9, 160);
+}
+
+/* responsive */
+@media only screen and (max-width: 1000px) {
+  .nav-list {
+    display: none;
+  }
+  .main-logo {
+    order: 2;
+  }
+  .menu-icon {
+    display: inline-block;
+    order: 1;
+    margin: 12px;
+  }
+  .header-box {
+    position: static;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+}
