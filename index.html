@@ -36,14 +36,6 @@
             <button class="submit-button" type="submit" onclick="search()">
               Search
             </button>
-            <script>
-              function search() {
-                let data = document.getElementById("search-bar-id").value;
-                console.log(data);
-                getCourse("cards", data);
-              }
-              // search("search-bar-id");
-            </script>
             <a href="#" class="nav-option">Udemy Business</a>
             <a href="#" class="nav-option">Teach on Udemy</a>
             <button class="login-button" type="submit">Login</button>
@@ -100,12 +92,8 @@
           </p>
           <input type="button" class="course-button" value="Explore Python" />
           <div class="course-card" id="cards"></div>
-          <script src="script.js">
-            getCourse("cards","");
-          </script>
-          <script>
-            getCourse("cards", "");
-          </script>
+          <script src="script.js"></script>
+          
         </div>
       </div>
     </section>
