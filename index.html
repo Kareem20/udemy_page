@@ -14,6 +14,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -30,12 +31,14 @@
               class="search-bar"
               type="search"
               placeholder="Search of anything.."
+              id="search-bar-id"
             />
+            <button class="submit-button" type="submit" onclick="search()">
+              Search
+            </button>
             <a href="#" class="nav-option">Udemy Business</a>
             <a href="#" class="nav-option">Teach on Udemy</a>
-            <div style="display: inl">
-              <input class="submit-button" type="submit" placeholder="Submit" />
-            </div>
+            <button class="login-button" type="submit">Login</button>
           </div>
           <div class="menu-icon">
             <a href="#">
@@ -88,73 +91,9 @@
             appeal to...
           </p>
           <input type="button" class="course-button" value="Explore Python" />
-          <div class="course-card">
-            <div class="card">
-              <img src="images/card-img.PNG" />
-              <h1 class="course-information">
-                Learn Python: The Complete Python Programming Course
-              </h1>
-              <p>Avinash Jain, The Codex</p>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <p>$94.99</p>
-            </div>
-            <div class="card">
-              <img src="images/card-img.PNG" />
-              <h1 class="course-information">
-                Learn Python: The Complete Python Programming Course
-              </h1>
-              <p>Avinash Jain, The Codex</p>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <p>$94.99</p>
-            </div>
-            <div class="card">
-              <img src="images/card-img.PNG" />
-              <h1 class="course-information">
-                Learn Python: The Complete Python Programming Course
-              </h1>
-              <p>Avinash Jain, The Codex</p>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <p>$94.99</p>
-            </div>
-            <div class="card">
-              <img src="images/card-img.PNG" />
-              <h1 class="course-information">
-                Learn Python: The Complete Python Programming Course
-              </h1>
-              <p>Avinash Jain, The Codex</p>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <p>$94.99</p>
-            </div>
-            <div class="card">
-              <img src="images/card-img.PNG" />
-              <h1 class="course-information">
-                Learn Python: The Complete Python Programming Course
-              </h1>
-              <p>Avinash Jain, The Codex</p>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
-              <p>$94.99</p>
-            </div>
-          </div>
+          <div class="course-card" id="cards"></div>
+          <script src="script.js"></script>
+          
         </div>
       </div>
     </section>

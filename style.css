@@ -34,8 +34,18 @@ body {
   padding: 12px;
   background-color: rgb(233, 238, 240);
 }
+
 .submit-button {
-  margin: 32px;
+  margin: 12px;
+  padding: 10px 24px;
+  border-width: 1px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+}
+
+.login-button {
+  margin: 12px;
   padding: 10px 24px;
   border-width: 1px;
   background-color: black;
