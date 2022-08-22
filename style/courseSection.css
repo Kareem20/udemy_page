@@ -1,0 +1,51 @@
+.courses-description {
+  margin: 14px;
+}
+
+.courses-description h1 {
+  font-size: 32px;
+}
+
+.courses-description p {
+  font-size: 20px;
+}
+
+.courses-topics {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.courses-topics li {
+  display: block;
+  color: rgb(161, 159, 159);
+  float: left;
+  text-align: center;
+  font-size: 24px;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.course-section {
+  border: 1px solid #969696;
+  margin: 0px 10px 10px 10px;
+  padding: 18px;
+}
+.course-section h1 {
+  width: 60%;
+  font-size: 36px;
+}
+.course-section p {
+  width: 60%;
+  font-size: 16px;
+}
+
+.course-button {
+  background-color: white;
+  text-decoration: black;
+  padding: 12px;
+  margin: 12px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+

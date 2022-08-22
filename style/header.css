@@ -1,0 +1,36 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
+.header-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 1344px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-box {
+  max-width: 25em;
+  background-color: white;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  padding: 1em;
+  align-self: flex-start;
+}
+@media only screen and (max-width: 1000px) {
+
+  .header-box {
+    position: static;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+  }
+  
+}
