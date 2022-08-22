@@ -50,18 +50,21 @@ function renderCourse(curCourse, parent, subString) {
 
   parent.appendChild(course);
 }
-
+function search() {
+  let data = document.getElementById("search-bar-id").value;
+  getCourse("cards", data);
+}
 function getCourse(child, subString) {
   let cards = document.getElementById(child);
   while (cards.firstChild) {
     cards.removeChild(cards.firstChild);
   }
-  fetch("http://localhost:3000/courses")
-    // fetch("https://raw.githubusercontent.com/Kareem20/udemy_page/frontend_Phase_2/data.json")
+  fetch(
+    "https://raw.githubusercontent.com/Kareem20/udemy_page/frontend_Phase_2/data.json"
+  )
     .then((response) => response.json())
     .then((data) => {
       for (const it in data) {
-        // console.log(data[it].title);
         renderCourse(data[it], cards, subString);
       }
     });
