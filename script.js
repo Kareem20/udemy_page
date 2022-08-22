@@ -102,7 +102,7 @@ function getCourse(child, subString, coursesSelector) {
   while (cards != null && cards.firstChild !== null) {
     cards.removeChild(cards.firstChild);
   }
-  fetch("http://localhost:3000/tab")
+  fetch("https://raw.githubusercontent.com/Kareem20/udemy_page/frontend-Phase_3/data.json")
     .then((response) => response.json())
     .then((data) => {
       curentCourse = coursesSelector;
