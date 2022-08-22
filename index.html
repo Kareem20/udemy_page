@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style/navBar.css" />
     <link rel="stylesheet" href="style/header.css" />
     <link rel="stylesheet" href="style/courseSection.css" />
+    <link rel="stylesheet" href="style/cardElement.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -77,6 +78,7 @@
         </div>
       </div>
     </header>
+
     <section>
       <div class="courses-div">
         <div class="courses-description">
@@ -176,15 +178,16 @@
             appeal to...
           </p>
           <input type="button" class="course-button" value="Explore Python" />
-          <div class="course-card" id="cards"></div>
-          <script src="script.js"></script>
+          <div class="courses-cards" id="cards"></div>
+          <!-- <script src="script.js"></script> -->
         </div>
       </div>
     </section>
+  
     <section>
-      <div class="container mw-100 p-4">
+      <div class="container mw-100 p-4 card ml-3 flex-column border-0">
         <p class="fs-4 fw-bold">Top categories</p>
-        <div class="container mw-100 p-0">
+        <div class="mw-100 p-0">
           <div class="row">
             <div class="col-lg-3 col-md-4">
               <img src="images/development.PNG" />

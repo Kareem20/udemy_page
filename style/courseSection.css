@@ -32,9 +32,13 @@
   margin: 0px 10px 10px 10px;
   padding: 18px;
 }
+.course-section h1 {
+  width: 60%;
+  font-size: 36px;
+}
 .course-section p {
   width: 60%;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .course-button {
@@ -45,39 +49,3 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.course-card {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.card {
-  width: 230px;
-  margin: 8px;
-}
-
-.checked {
-  color: orange;
-}
-
-.course-card p {
-  font-size: 14px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin: 2px;
-}
-
-.course-card h1 {
-  margin: 2px;
-  font-size: 18px;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-a:hover {
-  color: slateblue;
-}
-
-.insideCard {
-  padding: 4px;
-}

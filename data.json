@@ -36,6 +36,20 @@
           "author": "Infinite Skills",
           "image": "https://www.pragimtech.com/wp-content/uploads/2019/03/java-script.jpg",
           "price": "E£519.99"
+        },
+        {
+          "id": 5,
+          "title": "Python Beyond the Basics - Object-Oriented Programming",
+          "author": "Infinite Skills",
+          "image": "https://www.pragimtech.com/wp-content/uploads/2019/03/java-script.jpg",
+          "price": "E£519.99"
+        },
+        {
+          "id": 5,
+          "title": "Python Beyond the Basics - Object-Oriented Programming",
+          "author": "Infinite Skills",
+          "image": "https://www.pragimtech.com/wp-content/uploads/2019/03/java-script.jpg",
+          "price": "E£519.99"
         }
       ]
     },
@@ -266,7 +280,7 @@
         },
         {
           "id": 5,
-          "title": "Drawing Beyond the Basics - Object-Oriented Programming",
+          "title": "Python Beyond the Basics - Object-Oriented Programming",
           "author": "Infinite Skills",
           "image": "https://www.pragimtech.com/wp-content/uploads/2019/03/java-script.jpg",
           "price": "E£519.99"
